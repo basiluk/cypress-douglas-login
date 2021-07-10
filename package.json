@@ -1,0 +1,36 @@
+{
+  "name": "cypress-suite",
+  "version": "1.0.0",
+  "description": "Test Suite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open",
+    "cy:dev": "cypress open --env fileConfig=dev",
+    "cy:qa": "cypress open --env fileConfig=qa",
+    "cy:prod": "cypress open --env fileConfig=prod",
+    "delete:reportFolder": "rm -rf mochawesome-report/",
+    "cy:run": "npm run delete:reportFolder && cypress run",
+    "merge:reports": "mochawesome-merge mochawesome-report/*.json > cypress-combined-report.json",
+    "create:html:report": "npm run merge:reports && marge --reportDir TestReport cypress-combined-report.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basiluk/cypress-douglas-login.git"
+  },
+  "author": "Basil Ummer Kutty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/basiluk/cypress-douglas-login/issues"
+  },
+  "homepage": "https://github.com/basiluk/cypress-douglas-login#readme",
+  "devDependencies": {
+    "cypress": "^7.6.0",
+    "cypress-mochawesome-reporter": "^2.2.0",
+    "cypress-xpath": "^1.6.2",
+    "mocha": "^9.0.2",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  }
+}

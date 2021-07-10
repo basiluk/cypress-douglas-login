@@ -1,0 +1,8 @@
+cypress-combined-report.json
+TestReport/*
+node_modules/*
+mochawesome-report/*
+cypress/screenshots
+cypress/videos
+.idea
+.vscode
