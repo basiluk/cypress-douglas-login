@@ -9,10 +9,11 @@
     "cy:dev": "cypress open --env fileConfig=dev",
     "cy:qa": "cypress open --env fileConfig=qa",
     "cy:prod": "cypress open --env fileConfig=prod",
-    "delete:reportFolder": "rm -rf mochawesome-report/",
+    "delete:reportFolder": "rm -rf mochawesome-report/ && rm -rf TestReport",
     "cy:run": "npm run delete:reportFolder && cypress run",
     "merge:reports": "mochawesome-merge mochawesome-report/*.json > cypress-combined-report.json",
-    "create:html:report": "npm run merge:reports && marge --reportDir TestReport cypress-combined-report.json"
+    "report:copyScreenshots": "cp -r cypress/screenshots TestReport/screenshots",
+    "create:html:report": "npm run merge:reports && marge --reportDir TestReport cypress-combined-report.json && npm run report:copyScreenshots"
   },
   "repository": {
     "type": "git",

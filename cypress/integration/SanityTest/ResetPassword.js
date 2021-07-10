@@ -1,7 +1,7 @@
-import user from '../fixtures/UserDetails.json'
-import { acceptCookies } from '../integration/utils'
+import user from '../../fixtures/UserDetails.json'
+import { acceptCookies } from '../../integration/utils'
 
-describe('Reset Password Test', () => {
+describe('Reset Password Tests', () => {
     beforeEach(() => {
         
       cy.visit('/');
@@ -23,4 +23,15 @@ describe('Reset Password Test', () => {
 
         cy.get('.login-box__title').should("be.visible").and("contain","Ich bin bereits Douglas-Kunde");
     })
+
+
+    /* This test is specifically designed to fail so that screenshots can be created in the HTML report*/
+    it('Addtional Test to replicate failed scenario and screenshot in HTML report', () => {
+      acceptCookies();
+
+      cy.get('.button.button__with-icon--transparent.account-flyout__button--main').click();
+      //click on Reset Password
+      cy.get('.loging__link').click();
+  
+  })
 })

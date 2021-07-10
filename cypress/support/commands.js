@@ -25,6 +25,8 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 Cypress.Commands.add('login', (username, password) => {
+    cy.get('.button.button__with-icon--transparent.account-flyout__button--main').click();
+    cy.url().should('eq', Cypress.config().baseUrl+'/de/login');
     cy.get('form[id="loginForm"]').find('[name="email"]').type(username).should('have.value', username)
     cy.get('form[id="loginForm"]').find('[name="password"]').type(password)      
     cy.get('form[id="loginForm"]').submit()

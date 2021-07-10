@@ -1,5 +1,7 @@
-import user from '../fixtures/UserDetails.json'
-import { acceptCookies } from '../integration/utils'
+import user from '../../fixtures/UserDetails.json'
+import { acceptCookies } from '../../integration/utils'
+
+/*Follwing Tests are done to Valdiate Login functionalties on Douglas.de website*/
 
 describe('Douglas Login Tests', () => {
     beforeEach(() => {
@@ -9,9 +11,7 @@ describe('Douglas Login Tests', () => {
   
     it('Login with Valid Credentials', () => {
         acceptCookies();
-        //click on Login option
-        cy.get('.button.button__with-icon--transparent.account-flyout__button--main').click();
-        cy.url().should('eq', Cypress.config().baseUrl+'/de/login');
+
         cy.login(user.ValidUsers[0].email,user.ValidUsers[0].password);
         //To check if login was sucessful
         cy.get('.account-flyout__status.icon.icon--SVG_19.icon--color-success').should("be.visible");
@@ -19,9 +19,7 @@ describe('Douglas Login Tests', () => {
 
     it('Login with Invalid credentials', () => {
         acceptCookies();
-        //click on Login option
-        cy.get('.button.button__with-icon--transparent.account-flyout__button--main').click();
-        cy.url().should('eq', Cypress.config().baseUrl+'/de/login');
+        
         cy.login(user.InvalidUsers[0].email,user.InvalidUsers[0].password);
 
         //Check for Invalid credentials error
@@ -30,9 +28,7 @@ describe('Douglas Login Tests', () => {
 
     it('Login with password not meeting password standards', () => {
         acceptCookies();
-        //click on Login option
-        cy.get('.button.button__with-icon--transparent.account-flyout__button--main').click();
-        cy.url().should('eq', Cypress.config().baseUrl+'/de/login');
+        
         cy.login(user.InvalidUsers[1].email,user.InvalidUsers[1].password);
 
         //Check for password standards not meeting error

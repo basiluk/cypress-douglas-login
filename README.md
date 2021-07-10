@@ -28,10 +28,10 @@ The test files are currently available under [cypress/integration](./cypress/int
 
 
 
-| Type             | Location                                                                       |
-| -----------------| ------------------------------------------------------------------------------ |
-| Login            | [cypress/integration/Login.js](cypress/integration/Login.js)                   |
-| Reset Password   | [cypress/integration/ResetPassword.js](cypress/integration/ResetPassword.js)   |
+| Type             | Location                                                                                  |
+| -----------------| ----------------------------------------------------------------------------------------- |
+| Login            | [cypress/integration/Login.js](cypress/integration/SanityTest/Login.js)                   |
+| Reset Password   | [cypress/integration/ResetPassword.js](cypress/integration/SanityTest/ResetPassword.js)   |
 
 
 ## Reporters
@@ -60,13 +60,13 @@ npm install
 
 ### Run the Tests
 
-For running specific spec files please use below sample format:
+For running set of spec files please use below sample format:
 
 ```shell
-npm run cy:run -- --spec "cypress/integration/Login.js" --env fileConfig=qa
+npm run cy:run -- --spec "cypress/integration/SanityTest/*.js" --env fileConfig=qa
 ```
 
-In the above example Login tests will be run on QA environment
+In the above example Login tests and Reset Password Tests will be run on QA environment
 
 > 🚩 **Note**
 >
