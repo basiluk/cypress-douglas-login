@@ -8,13 +8,13 @@ A Test automation framework to for testing <strong>DOUGLAS Login Functionalties<
 
 🛠 Built with Cypress and NPM  
 🚀 Framework can be used for bulding End to End Testing suites with mulitple spec files. Single well Organized HTML reports can be generated for each test  
-👮‍♂️ Can be used for Running tests in multiple environments by setting neccessary Config values in (./cypress/config)  
-🔥 Test Data files can be maintained under (./cypress/fixtures/)  
+👮‍♂️ Can be used for Running tests in multiple environments by setting neccessary Config values in [config](./cypress/config)  
+🔥 Test Data files can be maintained under [fixtures](./cypress/fixtures/)  
 💻 CI/CD Compatiable  
 
 ## Environments
 
-Environment specific configuration files are available under (./cypress/config) . For now all environment files are saved with same values, This can be updated accordingly. Find below one sample :
+Environment specific configuration files are available under [config](./cypress/config) . For now all environment files are saved with same values, This can be updated accordingly. Find below one sample :
 
 ```json
 {
@@ -24,7 +24,7 @@ Environment specific configuration files are available under (./cypress/config) 
 
 ## Tests
 
-The test files are currently available under (./cypress/integration)
+The test files are currently available under [cypress/integration](./cypress/integration)
 
 
 
@@ -38,11 +38,11 @@ The test files are currently available under (./cypress/integration)
 
 Currently mochawesome reporter is used in this framework. This will merge all spec json reports to form a sinlge HTML report.
 
-The Report level configuration are maintained in (.cypress.json)
+The Report level configuration are maintained in [cypress.json](.cypress.json)
 
 While running cypress tests from command line, reporter will be selected by default, need not mention this again.
 
-After Teste execution reports will be generated under (.TestReport)
+After Teste execution reports will be generated under [TestReport](.TestReport)
 
 ## Getting Started
 
