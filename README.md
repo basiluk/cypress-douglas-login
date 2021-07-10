@@ -6,11 +6,11 @@ A Test automation framework to for testing <strong>DOUGLAS Login Functionalties<
 
 ## Features
 
-🛠 Built with Cypress and NPM
-🚀 Framework can be used for bulding End to End Testing suites with mulitple spec files. Single well Organized HTML reports can be generated for each test 
-👮‍♂️ Can be used for Running tests in multiple environments by setting neccessary Config values in (./cypress/config)
-🔥 Test Data files can be maintained under (./cypress/fixtures/)
-💻 CI/CD Compatiable
+🛠 Built with Cypress and NPM  
+🚀 Framework can be used for bulding End to End Testing suites with mulitple spec files. Single well Organized HTML reports can be generated for each test  
+👮‍♂️ Can be used for Running tests in multiple environments by setting neccessary Config values in (./cypress/config)  
+🔥 Test Data files can be maintained under (./cypress/fixtures/)  
+💻 CI/CD Compatiable  
 
 ## Environments
 
