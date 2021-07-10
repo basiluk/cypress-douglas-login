@@ -68,6 +68,12 @@ npm run cy:run -- --spec "cypress/integration/SanityTest/*.js" --env fileConfig=
 
 In the above example Login tests and Reset Password Tests will be run on QA environment
 
+After runing tests the follwing command needs to be run to generate reports along with failed screenshots
+
+```shell
+npm run create:html:report
+```
+
 > 🚩 **Note**
 >
 > Additional cypress options can be used such as selection specific browsers
