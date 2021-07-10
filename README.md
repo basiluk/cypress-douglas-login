@@ -1,4 +1,4 @@
-# cypress-douglas-login
+# Test Automation Framework using Cypress
 
 <p align="center">
 A Test automation framework to for testing <strong>DOUGLAS Login Functionalties</strong> by using <a href="https://cypress.io">Cypress</a> testing methods, patterns, and workflows.
