@@ -49,6 +49,7 @@ After Teste execution reports will be generated under [TestReport](.TestReport)
 ### Prerequisites
 
 The only requirement for this project is to have [Node.js](https://nodejs.org/en/) installed on your machine.
+Currently framewrok is designed in Linux machine. This should work fine on iOS as well.
 
 ### Installation
 
