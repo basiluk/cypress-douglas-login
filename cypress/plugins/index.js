@@ -22,7 +22,7 @@
  function getConfigurationByFile(file) {
   const pathToConfigFile = path.resolve(
     '..',
-    'cypress-douglas-login/cypress/config',
+    'cypress-douglas-login','cypress','config',
     `${file}.json`
   );
  

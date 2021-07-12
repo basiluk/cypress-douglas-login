@@ -9,7 +9,7 @@
     "cy:dev": "cypress open --env fileConfig=dev",
     "cy:qa": "cypress open --env fileConfig=qa",
     "cy:prod": "cypress open --env fileConfig=prod",
-    "delete:reportFolder": "rm -rf mochawesome-report/ && rm -rf TestReport",
+    "delete:reportFolder": "npx rimraf mochawesome-report/ && npx rimraf TestReport",
     "cy:run": "npm run delete:reportFolder && cypress run",
     "merge:reports": "mochawesome-merge mochawesome-report/*.json > cypress-combined-report.json",
     "report:copyScreenshots": "cp -r cypress/screenshots TestReport/screenshots",
