@@ -42,14 +42,14 @@ The Report level configuration are maintained in [cypress.json](.cypress.json)
 
 While running cypress tests from command line, reporter will be selected by default, need not mention this again.
 
-After Teste execution reports will be generated under [TestReport](.TestReport)
+After Test execution reports will be generated under [TestReport](.TestReport)
 
 ## Getting Started
 
 ### Prerequisites
 
 The only requirement for this project is to have [Node.js](https://nodejs.org/en/) installed on your machine.
-Currently framewrok is designed in Linux machine. This should work fine on iOS as well.
+Currently framework is designed in Linux machine. This should work fine on macOS as well.
 
 ### Installation
 
